@@ -1,0 +1,190 @@
+.event__form{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 290px;
+  }
+  
+  .event__form_m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  .event {
+    padding: 200px 0;
+    background-image: url('../../img/dogch.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  .event__form-heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .input-email_event {
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    outline: none;
+    width: 335px;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    padding: 18px 22px 12px 22px;
+    color: #949494;
+    margin-right: 21px;
+  }
+  
+  .input__btn-event{
+    background: #333333;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    padding: 15px 50px;
+    color: #FFFFFF;
+  }
+
+
+  @media only screen and (min-width: 1000px) and (max-width: 1140px) {
+    .event__form {
+      margin-left: 80px;
+    }
+  }
+  @media only screen and (min-width: 780px) and (max-width: 1000px) {
+    .event__form {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      margin-top: 400px;
+    }
+    .event__form-heading {
+      color: rgb(59, 59, 59);
+    }
+    .event {
+      padding: 70px 0;
+      background-position: right top;
+    }
+    .input-email_event {
+      border: 1px solid black;
+    }
+  }
+  @media only screen and (min-width: 550px) and (max-width: 780px) {
+    .event__form {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      margin-top: 400px;
+    }
+    .event__form-heading {
+      color: rgb(59, 59, 59);
+    }
+    .event {
+      padding: 70px 0;
+      background-position: right top;
+    }
+    .input-email_event {
+      border: 1px solid black;
+    }
+  }
+  @media only screen and (min-width: 510px) and (max-width: 550px) {
+    .event__form {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      margin-top: 400px;
+    }
+    .event__form_m {
+      display: flex;
+      flex-direction: column;
+    }
+    .input__btn-event {
+      margin-top: 15px;
+    }
+    .event__form-heading {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: rgb(59, 59, 59);
+    }
+    .event {
+      padding: 70px 0;
+      background-position: right top;
+    }
+    .input-email_event {
+      border: 1px solid black;
+    }
+  }
+
+  @media only screen and (min-width: 460px) and (max-width: 510px) {
+    .event__form {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+    }
+    .event__form_m {
+      display: flex;
+      flex-direction: column;
+    }
+    .input__btn-event {
+      margin-top: 15px;
+    }
+    .event__form-heading {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: rgb(59, 59, 59);
+    }
+    .event {
+      padding: 70px 0;
+      background-image:none;
+    }
+    .input-email_event {
+      border: 1px solid black;
+    }
+  }
+
+  @media only screen and (min-width: 5px) and (max-width: 460px) {
+    .event__form {
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+    }
+    .event__form_m {
+      display: flex;
+      flex-direction: column;
+    }
+    .input__btn-event {
+      margin-top: 15px;
+    }
+    .event__form-heading {
+      font-size: 35px;
+      margin-bottom: 20px;
+      color: rgb(59, 59, 59);
+    }
+    .event {
+      padding: 30px 10px;
+      background-image:none;
+    }
+    .input-email_event {
+      border: 1px solid black;
+    }
+    .input-email_event {
+      width: 280px;
+    }
+  }
