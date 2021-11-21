@@ -1,0 +1,270 @@
+.site-form {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 100px;
+}
+
+.site-form .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.company-location-image {
+  display: block;
+  height: 100%;
+}
+
+.communication__heading {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  margin-top: 62px;
+  margin-bottom: 14px;
+  color: #FFFFFF;
+}
+
+.communication__text {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  width: 343px;
+  margin-bottom: 29px;
+  color: #949494;
+}
+
+.communication__wrapper {
+  background-image: url('../../img/fishes.png');
+  background-size: 40%, 100%;
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 62px 0 45px 116px;
+  flex-grow: 1;
+}
+
+.site-form-heading {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  width: 360px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 14px;
+
+  color: #FFFFFF;
+}
+
+.site-form-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  width: 334px;
+  margin-top: 0;
+  margin-bottom: 29px;
+  color: #949494;
+}
+
+.really-form {
+  width: 375px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.input-name {
+  margin-bottom: 14px;
+}
+
+
+
+.input-name,
+.input-email {
+  width: 375px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #949494;
+  padding: 16px 22px 13px 22px;
+  outline: none;
+}
+
+.input-email {
+  border: 2px solid transparent;
+  margin-bottom: 14px;
+}
+
+.input-email:valid,
+.input-name:valid,
+.input-textarea:not(:placeholder-shown):focus:valid,
+.input-email_k:valid {
+  border: 2px solid #00B031;
+  color: #00B031;
+  outline: none;
+}
+
+.form__wrapper {
+  display: flex;
+}
+
+.input-email:not(:placeholder-shown):focus:invalid,
+.input-name:not(:placeholder-shown):focus:invalid,
+.input-textarea:not(:placeholder-shown):focus:invalid,
+.input-email_k:not(:placeholder-shown):focus:invalid {
+  border: 2px solid #D81D04;
+  color: #D81D04;
+  ;
+  outline: none;
+}
+
+.communication__wrapper {
+  margin-left: 166px;
+}
+
+.input-textarea {
+  width: 375px;
+  resize: none;
+  min-height: 165px;
+  padding: 17px 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #949494;
+  outline: none;
+}
+
+.input-submit {
+  padding: 15px 50px;
+  background-color: #FFBD54;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  border: none;
+}
+
+@media screen and (max-width: 1450px) {
+  .communication__wrapper {
+    margin-left: 30px;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .communication__heading {
+    font-size: 40px;
+  }
+
+  .communication__text {
+    width: 340px;
+  }
+
+  .input-name,
+  .input-email {
+    width: 340px;
+  }
+
+  .really-form {
+    width: 340px;
+  }
+
+  .input-textarea {
+    width: 340px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .communication__wrapper {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .communication__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .communication__heading {
+    font-size: 35px;
+    margin-top: 0;
+  }
+  .site-form {
+    margin-bottom: 60px;
+  }
+
+  .communication__text {
+    width: 320px;
+  }
+
+  .input-name,
+  .input-email {
+    width: 320px;
+  }
+
+  .really-form {
+    width: 320px;
+    padding-right: 10px;
+  }
+
+  .input-textarea {
+    width: 320px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .communication__text {
+    width: 300px;
+  }
+
+  .communication__wrapper {
+    margin-left: 0;
+  }
+
+  .input-name,
+  .input-email {
+    width: 300px;
+  }
+
+  .really-form {
+    width: 300px;
+    padding-right: 10px;
+  }
+
+  .input-textarea {
+    width: 300px;
+    height: 40px;
+  }
+}
