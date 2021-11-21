@@ -1,0 +1,211 @@
+.useful__nav {
+    display: flex;
+    margin-bottom: 33px;
+}
+.useful__img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 560px;
+}
+.useful__hero-main {
+    margin-top: 40px;
+}
+.useful__hero {
+    display: flex;
+}
+.useful__text-nav {
+    font-size: 14px;
+line-height: 18px;
+margin-right: 18px;
+color: #333333;
+}
+.useful__title {
+    margin-bottom: 6px;
+    font-weight: bold;
+font-size: 70px;
+line-height: 64px;
+color: #333333;
+}
+.title__yellow {
+    color: #FFBD54;
+}
+.useful__text {
+    max-width: 650px;
+    margin-top: 22px;
+    font-size: 16px;
+line-height: 20px;
+color: #949494;
+}
+.useful__left {
+    margin-right: 145px;
+}
+.useful__texts {
+    display: flex;
+    flex-direction: column;
+}
+.useful__links {
+    display: flex;
+    margin-top: 64px;
+}
+.useful__link-price {
+    padding: 15px;
+background: #FFBD54;
+border-radius: 3px;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+margin-right: 21px;
+padding: 14px 37px 14px 64px;
+    background-image:url('../../img/money.png') ;
+    background-repeat: no-repeat;
+    background-position: center left 37px;
+}
+.useful__right{
+    margin-left: auto;
+}
+.useful__link-reception {
+    background: #333333;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF; 
+    padding: 14px 37px 14px 64px;
+    background-image:url('../../img/document.png') ;
+    background-repeat: no-repeat;
+    background-position: center left 37px;
+}
+.useful__card {
+    border: 1px solid #E4E4E2;
+box-sizing: border-box;
+border-radius: 5px;
+margin-bottom: 11px;
+}
+.useful__card-date {
+    font-weight: 500;
+font-size: 14px;
+padding-left: 30px;
+line-height: 18px;
+margin-top: 19px;
+margin-bottom: 3px;
+color: #949494;
+}
+.useful__card-heading {
+    font-weight: bold;
+font-size: 22px;
+line-height: 25px;
+padding-left: 30px;
+width: 208px;
+margin-bottom: 13px;
+color: #000000;
+}
+.useful__card-text {
+    width: 244px;
+    font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+margin-bottom: 30px;
+padding-left: 30px;
+color: #949494;
+}
+.useful__card-img {
+    width: 305px;
+    height: 180px;
+}
+.useful__card-link {
+    font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #333333;
+padding-left: 30px;
+padding-bottom: 35px;
+}
+
+.useful__card-link::before {
+    content: '';
+    width: 23px;
+    height: 21px;
+    background-image: url("../../img/pet.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 23px 21px;
+    background-position: center  center;
+    margin-right: 7px;
+}
+.btn__useful {
+    background: #000000;
+}
+
+@media screen and (max-width: 1075px) {
+    .useful__hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .useful__right {
+        margin-top: 40px;
+        display: flex;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+    .useful__card {
+        margin-left: 30px;
+    }
+    .useful__img {
+        height: auto;
+    }
+    .useful__left {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .useful__title {
+        font-size: 55px;
+    }
+
+    .useful__card {
+    margin-bottom: 9px;
+    }
+    .useful__card-date {
+    font-size: 12px;
+    }
+    .useful__card-heading {
+    font-size: 20px;
+    line-height: 22px;
+    padding-left: 30px;
+    width: 200px;
+    }
+    .useful__card-text {
+        width: 220px;
+    font-size: 16px;
+    line-height: 20px;
+    }
+    .useful__card-img {
+        width: 270px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .useful__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 540px) {
+    .useful__title {
+        font-size: 45px;
+    }
+    .useful__link-price {
+        padding: 12px;
+        background-image: none;
+    }
+    .useful__link-reception {
+background-image: none;
+        padding: 12px 24px 12px 24px;
+    }
+}

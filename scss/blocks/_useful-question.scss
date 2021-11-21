@@ -1,0 +1,132 @@
+.useful__question {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 100px 0;
+    background-image: url('../../img/useful-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+.useful__question-form {
+    display: flex;
+}
+.useful_question-wrapper-text {
+    padding-right: 64px;
+}
+.useful__question-form {
+    padding-top: 34px;
+}
+.useful__question-heading {
+    font-weight: bold;
+font-size: 56px;
+max-width: 276px;
+padding-bottom: 8px;
+line-height: 62px;
+color: #FFFFFF;
+}
+.useful__question-text {
+    font-weight: 500;
+font-size: 26px;
+line-height: 30px;
+color: #FFFFFF;
+}
+.useful__question-wrapper-form {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+}
+.useful__input-name {
+    margin-bottom: 14px;
+}
+.useful__input-name,.useful__input-email{
+    width: 335px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #949494;
+    padding: 16px 22px 13px 22px;
+    outline: none;
+  }
+  .useful__input-email {
+    border: 2px solid transparent;
+    margin-bottom: 14px;
+  }
+
+  .useful__input-email:valid , .useful__input-name:valid ,.useful__input-textarea:not(:placeholder-shown):focus:valid , .input-email_k:valid{
+    border: 2px solid #00B031;
+    color:#00B031 ;
+    outline: none;
+  }
+  .form__wrapper {
+    display: flex;
+}
+
+.useful__input-email:not(:placeholder-shown):focus:invalid , .useful__input-name:not(:placeholder-shown):focus:invalid , .useful__input-textarea:not(:placeholder-shown):focus:invalid , .useful__input-email_k:not(:placeholder-shown):focus:invalid{
+    border: 2px solid #D81D04;
+    color:#D81D04; ;
+    outline: none;  
+  }
+
+  .useful__input-textarea{
+    width: 335px;
+    resize: none;
+    min-height: 165px;
+    padding: 17px 22px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #949494;
+    outline: none;
+  }
+
+  .useful__input-submit{
+    padding: 15px 50px;
+    background: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .useful__question {
+      background-image: none;
+       background: #78C0DE;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .useful__question-heading {
+  font-size: 45px;
+  }
+  }
+  @media screen and (max-width: 650px) {
+    .useful__question-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  }
+  .useful_question-wrapper-text {
+    margin-bottom: 25px;
+  }
+  .useful__input-submit{
+    padding: 15px 30px;
+  }
+  }
+
+  @media screen and (max-width: 520px) {
+    .useful__input-name,.useful__input-email {
+      max-width: 280px;
+    }
+    .useful__input-textarea {
+      max-width: 280px;
+    }
+  }
