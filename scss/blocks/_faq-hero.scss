@@ -1,0 +1,78 @@
+.faq__hero-wrapper {
+    max-width: 453px;
+}
+.faq__title {
+    padding-top: 118px;
+    margin-bottom: 27px;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 64px;
+    color: #333333;
+}
+.faq__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+.faq__link {
+    background: #78C0DE;
+    border-radius: 3px;
+    margin-top: 35px;
+    margin-bottom: 63px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 14px 37px 14px 64px;
+    background-image:url('../../img/document.png') ;
+    background-repeat: no-repeat;
+    background-position: center left 37px;
+}
+.faq__main {
+    background-image: url('../../img/faq-cat-hero.png'),
+    url("../../img/faq-bird.png");
+    background-repeat: no-repeat;
+    background-position: right calc(50% - 530px) top calc(100% - 1000px),
+    right calc(50% - 500px)  bottom;
+}
+
+
+@media screen and (max-width: 1340px) {
+    .faq__main {
+        background-position: right calc(50% - 300px) top calc(100% - 1000px),
+        right calc(50% - 390px)  bottom;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .faq__main {
+        background-image: none;
+    }
+    .faq__hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .faq__title {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 800px) {
+    
+    .faq__title {
+        padding-top: 40px;
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .faq__title {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    .faq__link {
+        margin-top: 25px;
+    }
+}

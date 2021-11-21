@@ -1,0 +1,103 @@
+.contacts__locations {
+    padding-top: 365px;
+    background-image: url('../../img/our-location-bgi.png');
+    background-repeat: no-repeat;
+    background-position: top 100px right 75px;
+    position: relative;
+  }
+  .contacts__location {
+      margin-bottom: 100px;
+  }
+  
+  .contacts__location_heading{
+    font-style: normal;
+    font-size: 48px;
+    line-height: 62px;
+    display: block;
+    align-items: center;
+    margin: 0 auto 60px auto;
+    max-width: 500px;
+    text-align: center;
+    color: #333333;
+  }
+  .contacts__location-img {
+    width: 867px;
+    height: 466px;
+  }
+  .contacts__location-dog-poab{
+    position: absolute;
+    left: 0;
+    top: 186px;
+  }
+  
+  .contacts__location-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-link{
+    display: inline-block;
+    flex-shrink: 1;
+  }
+  .company-img{
+    height: 466px;
+    flex-shrink: 1;
+  }
+  @media screen and (max-width: 1310px) {
+.contacts__location-dog-poab {
+  display: none;
+}
+.contacts__location-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.location-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.contacts-location-img {
+  height: auto;
+}
+.company-img {
+  width: 100%;
+}
+  }
+  @media screen and (max-width: 750px) {
+    .contacts__locations {
+      padding-top: 325px;
+      background-position: top 100px right -400px;
+    }
+    .contacts__locations {
+    padding-top: 350px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .contacts-location-img {
+      height: auto;
+      width: 300px;
+    }
+    .company-img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .contacts__locations {
+      padding-top: 365px;
+      background-image: url('../../img/our-location-bgi.png');
+      background-repeat: no-repeat;
+      background-position: top 100px right -400px;
+    }
+    .location-link {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .contacts__locations {
+      background-image: none;
+      padding-top: 40px;
+    }
+  }
