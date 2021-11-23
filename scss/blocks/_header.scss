@@ -118,31 +118,31 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .logo-link-container{
+}
+
+.logo-link-container{
     width: 180px;
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-  }
-  
-  .site-logo-link{
+}
+
+.site-logo-link{
     display: block;
-  }
-  
-  .site-logo-link:hover{
+}
+
+.site-logo-link:hover{
     opacity: 0.8;
-  }
-  
-  .site-logo-link:active{
+}
+
+.site-logo-link:active{
     opacity: 0.5;
-  }
-  
-  .site-logo-link-img{
+}
+
+.site-logo-link-img{
     display: inline-block;
-  }
+}
 .site__nav-list {
     min-width: 975px;
     margin: 0 auto;
@@ -207,10 +207,103 @@
     background-size: 23px 21px;
     background-position: center  center;
     margin-right: 7px;
-  }
+}
+.header__mobile {
+    display: none;
+}
+.btns {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1022220;
+    height: 100%;
+    width: 100%;
+    background-color: #FFBD54
+}
+.d__nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.d__nav-item-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+.header__button-toggler-open {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 20px;
+    width: 25px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/meu-toggler.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: background-position 0.2s ease;
+    background-position: right center;
+}
+.btns {
+    display: none;
+    &.active {
+        display: flex;
+    }
+}
+.header__button-toggler {
+    display: block;
+    width: 25px;
+    height: 22px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/meu-toggler.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    transition: background-position 0.2s ease;
+    
+    &.active {
+        background-position: right center;
+    }
+}
 
-  @media only screen and (min-width: 10px) and (max-width: 1190px) {
-    .site__header {
+
+@media only screen and (max-width: 1170px) {
+    .addresses {
         display: none;
     }
-  }
+    .nav__question {
+        display: none;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .site__nav-list {
+        display: none;
+    }
+    .logo-link-container {
+        display: none;
+    }
+    .header__mobile {
+        display: block;
+        display: flex;
+        background: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        padding: 10px 25px;
+        justify-content: space-between;
+    }
+   
+}
